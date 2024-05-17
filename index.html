@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Zoo</title>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+    
+  <nav class="navbar navbar-expand-lg fixed-top" id="navmenu">
+    <div class="container nav">
+        <a class="navbar-brand" href="#">Ontario zoo <strong style="color: orange">Wildlife</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bar" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-2">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#news">News</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#contact">Contact us</a>
+                </li>
+            </ul>
+            <form class="d-flex sign">
+              <button class="btn btn-outline-success mx-3 signUp" type="button" onclick="redirectToSignUp()">Sign Up</button>
+              <button class="btn btn-outline-success px-3 signIn" type="button" onclick="redirectToLogin()">Login</button>
+              <button class="btn btn-outline-danger px-3 logout" type="button" onclick="logout()" style="display: none;">Logout</button>
+             
+            </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+  
+          <section class="home" id="home">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/land_animals/Lions.jpg" class="d-block w-100" alt="img/" class="img-fluid ">
+                    <div class="carousel-caption d-none d-md-block py-5">
+                        <h3>Lion kingdom</h3>
+                        <p>Pride rules, roars echo across savanna</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/land_animals/Rhino-baby.jpg" class="d-block w-100" alt="img/" class="img-fluid ">
+                    <div class="carousel-caption d-none d-md-block py-5">
+                        <h3>The Rhino</h3>
+                        <p>As the saying says, you mess with the rhino you get the horn</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/reptiles/baby-snake.jpg" class="d-block w-100" alt="img/" class="img-fluid ">
+                    <div class="carousel-caption d-none d-md-block py-5">
+                        <h3>Snake</h3>
+                        <p>Silent stalkers, cold-blooded constrictors rule</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/reptiles/crocs-river.webp" class="d-block w-100" alt="img/" class="img-fluid ">
+                    <div class="carousel-caption d-none d-md-block py-5">
+                        <h3>Crocs</h3>
+                        <p>Ancient power lurks, silent jaws snap with force</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/birds/eagle.jpg" class="d-block w-100" alt="img/" class="img-fluid ">
+                    <div class="carousel-caption d-none d-md-block py-5">
+                        <h3>Eagles</h3>
+                        <p>Soaring majesty, sharp eyes rule the sky</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/birds/peacock.jpg" class="d-block w-100" alt="img/" class="img-fluid ">
+                    <div class="carousel-caption d-none d-md-block py-5">
+                        <h3>Peacock</h3>
+                        <p>Jewel-toned beauty, shimmering pride unfolds</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/amphibians/archeys-frog-AucklandZoo-2-1-1024x576.jpg" class="d-block w-100" alt="img/" class="img-fluid ">
+                    <div class="carousel-caption d-none d-md-block py-5">
+                        <h3>Frogs</h3>
+                        <p>Wet-skinned wonders, from tadpole to leaping joy</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/amphibians/box_turtle_web.jpg" class="d-block w-100" alt="img/" class="img-fluid ">
+                    <div class="carousel-caption d-none d-md-block py-5">
+                        <h3>Turtle</h3>
+                        <p>Ancient wisdom, patient steps leave ancient tracks.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section id="about">
+            <div class="container">
+                <div class="about py-5 ">
+                    <h2 class="text-center text-capitalize ">About</h2>
+                    <p class="text-center ">The Ontario Zoo is one of the largest zoo in the world, with over 100,000 animals.
+                         The zoo is located in downtown Ottawa, in the heart of the city.</p>
+                    <div class="about-home row d-flex justify-content-evenly  ">
+                    <div class="about-us p-4 mx-2 my-3 col-lg-3 col-md-4 col-sm-12 about-1 ">
+                      <img src="img/land_animals/giraffe_willow-660x440.jpg" alt="" class="img-one">
+                      <div class="mission">
+                        <h3>Mission & Values</h3>
+                        <ul>
+                            <li>We're passionate about our customers utmost satisfaction and believe in being the best at all time.</li>
+                            <li>Our mission is to make our country more enjoyable for travelers</li>
+                            <li>We strive to be the best through exploring at all times.</li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="about-us p-4 mx-2 my-3 col-lg-3 col-md-4 col-sm-12 about-2 ">
+                      <img src="img/amphibians/archeys-frog-AucklandZoo-2-1-1024x576.jpg" alt="" class="img-one">
+                      <div class="mission">
+                        <h3>Impact & Achievements</h3>
+                        <ul>
+                            <li>We've helped hundreds of clients achieve alot of insights on animals.</li>
+                            <li>We're proud to have been recognized for having the most amount of animals in this continent.</li>
+                            <li>Our work has been featured in FORBES, INSTAGRAM and PINTEREST.</li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="about-us p-4 mx-2 my-3 col-lg-3 col-md-4 col-sm-12 about-3 ">
+                      <img src="img/birds/animals_hero_owl.jpg" alt="" class="img-one ">
+                      <div class="mission">
+                        <h3>Call to Action</h3>
+                        <ul>
+                            <li>Let's connect and discuss how we can help you by telling you the histories of how each of this animals enter our country.</li>
+                            <li>We're excited to hear from you and embark on a new project together.</li>
+                            <li>Ready to blow ur mind in the most beautiful way and get you the best
+                                experience you an ask for. Get in touch today!</li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="about-us p-4 mx-2 my-3 col-lg-3 col-md-4 col-sm-12 about-4 ">
+                      <img src="img/reptiles/800px-Belgrade_zoo_lizard.jpg" alt="" class="img-one">
+                      <div class="mission">
+                      <h3>Story & Background</h3>
+                      <ul>
+                          <li>It all started with when i was a kid i loved watching Nat-geo wild. Then as i was 18 i collected a loan and started the zoo as a small building then after some years 
+                            we are here today.</li>
+                          <li>We're excited to hear from you and embark on a new project together.</li>
+                          <li>Ready to blow ur mind in the most beautiful way and get you the best
+                              experience you an ask for. Get in touch today!</li>
+                      </ul>
+                      </div>
+                  </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <section class="page">
+            <div class="container">
+              <div class="row ">
+                <div class="lord-icon d-flex justify-content-between text-center ">
+                  
+                <div class="col-lg-3 col-md-3 col-sm-6 lord">
+                  <lord-icon
+                      src="https://cdn.lordicon.com/wruiemmd.json"
+                      trigger="hover"
+                      style="width:80px;height:80px">
+                  </lord-icon>
+                  <h6>300+</h6>
+                  <h6>Land Animals</h6>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 lord">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/kzxovepl.json"
+                    trigger="hover"
+                    style="width:80px;height:80px">
+                </lord-icon>
+                <h6>150+</h6>
+                <h6>Aquatic Animals</h6>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 lord">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/bigjajgp.json"
+                    trigger="hover"
+                    style="width:80px;height:80px">
+                </lord-icon>
+                <h6>100+</h6>
+                <h6>Reptile</h6>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 lord">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/xjyrafuu.json"
+                    trigger="hover"
+                    style="width:80px;height:80px">
+                </lord-icon>
+                <h6>200+</h6>
+                <h6>Birds</h6>
+                </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="news">
+            <div class="container">
+              <div class="row news">
+                <h2 class="text-center text-light ">News</h2>
+                <div class="news-flash">
+                  <div class="new mx-3 col-xl-4 col-md-6 col-sm-6">
+                    <div class="card ">
+                      <img src="img/land_animals/ansie-potgieter-GV2LxPJArgQ-unsplash.jpg" class="card-img" alt="img/">
+                      <div class="card-img-overlay">
+                        <h3 class="card-title">New Animal Arrivals</h3>
+                        <p class="card-text">The announcement of The new animals arival are as follows.</p>
+                        <ul class="card-text">
+                          <li>Grizly bear.
+                          </li>
+                          <li>Elephant.</li>
+                          <li>Green Sea Turtles.</li>
+                          <li>Sumatran Tigers.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="new mx-3 col-xl-4 col-md-6 col-sm-6 ">
+                    <div class="card">
+                      <img src="img/land_animals/artenschutzweltweit_galerie1_grevyzebra.jpg" class="card-img" alt="img/">
+                      <div class="card-img-overlay">
+                        <h3 class="card-title">Upcoming Events</h3>
+                        <p class="card-text">In our upcoming Events we are giving our customers the chance to feed the animals while taking 
+                          the necesarry precautions.</p>
+                      </div>
+                    </div>
+                    </div>
+                  <div class="new mx-3 col-xl-4 col-md-6 col-sm-6 ">
+                    <div class="card">
+                      <img src="img/land_animals/Caesargiraffeheader.jpg" class="card-img" alt="img/">
+                      <div class="card-img-overlay">
+                        <h3 class="card-title">Conservation Efforts</h3>
+                        <p class="card-text">TIn our effort the keep the endagered species safe we are getting our hands on most of them and keeping them save 
+                          so as to keep them from extinction.</p>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="new mx-3 col-xl-4 col-md-6 col-sm-6 ">
+                    <div class="card">
+                      <img src="img/amphibians/box_turtle_web.jpg" class="card-img" alt="img/">
+                      <div class="card-img-overlay">
+                        <h3 class="card-title">Staff Spotlights</h3>
+                        <p class="card-text">Our staffs works are the feeding of animals and keeping them save,
+                          keeping the animals organized so as to ensure our customers safety,
+                          and making sure we are the best out there.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="new mx-3 col-xl-4 col-md-6 col-sm-6 ">
+                    <div class="card">
+                      <img src="img/reptiles/800px-Belgrade_zoo_lizard.jpg" class="card-img" alt="img/">
+                      <div class="card-img-overlay">
+                        <h3 class="card-title">Community Outreach</h3>
+                        <p class="card-text">Due to the florishment of our zoo it has improved the community alot and made it one 
+                          of the florished community in the country. We have also helped in the eduction of the 
+                          students in this community on animals as there is a discount for every citizen.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="new mx-3 col-xl-4 col-md-6 col-sm-6 ">
+                    <div class="card">
+                      <img src="img/reptiles/baby-snake.jpg" class="card-img" alt="img/">
+                      <div class="card-img-overlay">
+                        <h3 class="card-title">Educational Resources</h3>
+                        <p class="card-text">Her are some educational resources:</p>
+                        <ul>
+                          <li><a href="https://education.nationalgeographic.org/resource/zoo/">Nat-Geo Wild</a></li>
+                          <li><a href=" https://nationalzoo.si.edu/">National Zoo</a></li>
+                          <li><a href=" https://www.aza.org/">Zoo practices</a></li>
+                          <li><a href=" https://www.waza.org/">perspectives on zoo managemen</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="new mx-3 col-xl-4 col-md-6 col-sm-6 ">
+                    <div class="card">
+                      <img src="img/reptiles/crocs.webp" class="card-img" alt="img/">
+                      <div class="card-img-overlay">
+                        <h3 class="card-title">Seasonal Updates</h3>
+                        <p class="card-text"> Our opening hours changes from 10AM to 5PM, to 9AM to 7PM during seasonal periods.</p>
+                    <p class="card-text">Our prices also changes from $2 per hour spent to $5 per hour</p>
+                    <p class="card-text">Most of the zoo animals are always available during this period to invite foreigners more.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="gallery">
+            <div class="container">
+              <div class="row galery">
+                <div class="gal-btn">
+                 
+                <button class="btn btn-outline-secondary mx-2 filter-btn active" data-filter="all">All</button>
+                <button class="btn btn-outline-secondary mx-2 filter-btn" data-filter="land">Land Animals</button>
+                <button class="btn btn-outline-secondary mx-2 filter-btn" data-filter="reptiles">Reptiles</button>
+                <button class="btn btn-outline-secondary mx-2 filter-btn" data-filter="birds">Birds</button>
+                <button class="btn btn-outline-secondary mx-2 filter-btn" data-filter="amphibians">Amphibians</button>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/ansie-potgieter-GV2LxPJArgQ-unsplash.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/artenschutzweltweit_galerie1_grevyzebra.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/Caesargiraffeheader.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/csm_artenschutzweltweit_galerie2_grevyzebra_6e1e193bc3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/csm_artenschutzweltweit_header_grevyzebra_def4961440.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/csm_Europaeische_Woelfe_ZooBerlin__1__e9a80f0a30.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/lion-pride-outside-2-1200x800.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/Lions.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/Meet-the-Monkeys.jpg.webp" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/mike-holford-xHnb8UeZnmg-unsplash.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/Monkey-in-Meet-the-Monkeys.jpg.webp" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-land" data-filter="land">
+                  <img src="img/land_animals/Rhino-baby.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-reptiles" data-filter="reptiles">
+                  <img src="img/reptiles/800px-Belgrade_zoo_lizard.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-reptiles" data-filter="reptiles">
+                  <img src="img/reptiles/baby-snake.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-reptiles" data-filter="reptiles">
+                  <img src="img/reptiles/crocs-river.webp" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-reptiles" data-filter="reptiles">
+                  <img src="img/reptiles/crocs.webp" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-reptiles" data-filter="reptiles">
+                  <img src="img/reptiles/snake.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-reptiles" data-filter="reptiles">
+                  <img src="img/reptiles/snakes.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-amphibians" data-filter="amphibians">
+                  <img src="img/amphibians/archeys-frog-AucklandZoo-2-1-1024x576.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-amphibians" data-filter="amphibians">
+                  <img src="img/amphibians/box_turtle_web.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-amphibians" data-filter="amphibians">
+                  <img src="img/amphibians/mountainchickenfrogbanner_1ZSL.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-birds" data-filter="birds">
+                  <img src="img/birds/animals_hero_owl.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-birds" data-filter="birds">
+                  <img src="img/birds/beautiful-peacock.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-birds" data-filter="birds">
+                  <img src="img/birds/chilean-flamingo.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-birds" data-filter="birds">
+                  <img src="img/birds/eagle-beak.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-birds" data-filter="birds">
+                  <img src="img/birds/eagle.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-birds" data-filter="birds">
+                  <img src="img/birds/owl_eurasian.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 image-gallery  dataset-birds" data-filter="birds">
+                  <img src="img/birds/peacock.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <section id="contact">
+            <div class="container">
+              <div class="row foot">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d805202.1138442694!2d144.3937424!3d-37.9696431!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                  1s0x6ad642b1b46283b9%3A0x33718f02306f1e54!2sNational%20Gallery%20of%20Victoria!5e0!3m2!1sen!2sng!4v1715379781829!5m2!1sen!2sng"
+                   width="650" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 footer">
+                  <h1 class="pb-5">visit us today</h1>
+                  <h2 class="pb-3">Ontario, Canada</h2>
+                  <h5 class="pb-2">288 Concession Rd 45, Ontario, ON M5V 3L9, Canada</h5>
+                  <h5 class="pb-2">Email: <a href="demolink@mail.org">demolink@mail.org</a></h5>
+                  <h2><a href="tel:+991234567890">+99 (0) 123 456 7890</a></h2>
+                </div>
+                </div>
+            </div>
+          </section>
+          <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-12 footer-head">
+                  <a class="footer-brand text-light " href="#https://demo.templatemonster.com/demo/66407.html?_gl=1*1e3m05n*
+              _ga*MTExNTc3NjIxMS4xNzE1MTY2NjE5*_ga_FTPYEGT5LY*MTcxNTM3MzI4MS4zL
+              jAuMTcxNTM3MzI4NC4wLjAuMA..">Ontario zoo <strong style="color: orange">Wildlife</strong></a>
+              <p class="pt-3 pb-3">&copy; Copyright <span id="copyright-year"></span>. All Rights Reserved.</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      function redirectToSignUp() {
+            window.location.href = 'signUp.html';
+        }
+
+        function redirectToLogin() {
+            window.location.href = 'login.html';
+        }
+
+        function logout() {
+            toggleButtons(false);
+        }
+
+        function loginSuccess() {
+            toggleButtons(true);
+        }
+
+        function toggleButtons(isLoggedIn) {
+            const signUpButton = document.querySelector('.signUp');
+            const loginButton = document.querySelector('.signIn');
+            const logoutButton = document.querySelector('.logout');
+
+            if (isLoggedIn) {
+                signUpButton.style.display = 'none';
+                loginButton.style.display = 'none';
+                logoutButton.style.display = 'block';
+            } else {
+                signUpButton.style.display = 'block';
+                loginButton.style.display = 'block';
+                logoutButton.style.display = 'none';
+            }
+        }
+
+      
+        document.addEventListener("DOMContentLoaded", function() {
+           
+            setTimeout(() => {
+                loginSuccess();
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
