@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    AOS.init();
     // Update copyright year
     const year = new Date().getFullYear();
     const copyrightElement = document.querySelector('#copyright-year');
@@ -16,11 +17,17 @@ document.addEventListener("DOMContentLoaded", function() {
             this.classList.add('active');
             const category = button.dataset.filter;
 
+            // Filter images by category
+            
             galleryImages.forEach(img => {
                 if (category === 'all' || img.dataset.filter === category) {
+                    img.setAttribute('data-aos', 'fade-right');
                     img.style.display = 'block';
+                    AOS.refresh();
+                    
                 } else {
                     img.style.display = 'none';
+                    img.removeAttribute('data-aos');
                 }
             });
         });
