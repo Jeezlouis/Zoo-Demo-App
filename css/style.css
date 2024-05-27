@@ -414,6 +414,7 @@ footer{
 @media (max-width: 768px){
     .body{
         width: 100%;
+        overflow: hidden;
     }
     .home .carousel-inner .carousel-item{
         height: 70vh;
